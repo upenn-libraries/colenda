@@ -62,6 +62,15 @@ span.site-name {
   }
 }
 
+#a-z {
+  li {
+    list-style: none;
+  }
+  a {
+    color: #FFFFFF;
+  }
+}
+
 #beta-announcement {
   clear: both;
   padding: 5px 10px;
