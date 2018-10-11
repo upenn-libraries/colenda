@@ -1,4 +1,4 @@
-version: '2'
+version: '3.7'
 
 services:
 
@@ -72,4 +72,3 @@ volumes:
   redis:
   db:
   web:
-
