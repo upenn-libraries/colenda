@@ -18,5 +18,5 @@ renderViewer = function() {
         tileSources: imagesArray,
         navImages: assetsHash
     });
-    return viewer;
+    return viewer.bookmarkUrl();
 }

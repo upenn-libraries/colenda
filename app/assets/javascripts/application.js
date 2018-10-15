@@ -17,5 +17,7 @@
 //= require_tree .
 //= require blacklight/blacklight
 //= require blacklight_range_limit
+//= require require
 //= require openseadragon
+//= require openseadragon-bookmark-url
 //= require colenda
