@@ -5,7 +5,7 @@
     var $ = window.OpenSeadragon;
 
     if (!$) {
-        //$ = require('openseadragon');
+        $ = require('openseadragon');
         if (!$) {
             throw new Error('OpenSeadragon is missing.');
         }
@@ -49,6 +49,7 @@
         };
 
         var useParams = function(params) {
+
             var zoom = self.viewport.getZoom();
             var pan = self.viewport.getCenter();
 
