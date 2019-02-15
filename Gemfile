@@ -66,8 +66,9 @@ gem 'devise'
 gem 'devise-guests', '~> 0.3'
 
 gem 'rb-readline'
-
 gem 'pry-rails', '~> 0.3.4'
+
+gem 'valkyrie'
 
 group :development, :test do
   gem 'jettywrapper'
