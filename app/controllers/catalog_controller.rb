@@ -9,13 +9,10 @@ class CatalogController < ApplicationController
     { :protocol => ENV['CATALOG_CONTROLLER_PROTOCOL'] }
   end
 
-  # These before_filters apply the hydra access controls
-  #before_filter :enforce_show_permissions, :only=>:show
-  # This applies appropriate access controls to all solr queries
+  # This filter applies the hydra access controls
+  #before_action :enforce_show_permissions, only: :show
 
   add_nav_action 'admin_repo/admin_menu', if: :current_user?
-
-  CatalogController.search_params_logic += [:exclude_unwanted_models]#, :exclude_unwanted_terms]
 
   configure_blacklight do |config|
     config.search_builder_class = Hydra::SearchBuilder

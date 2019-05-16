@@ -40,7 +40,6 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin_repo', as: 'rails_admin'
 
   root to: "catalog#index"
-  blacklight_for :catalog
 
   devise_for :users, skip: :registrations
   devise_scope :user do
@@ -50,7 +49,6 @@ Rails.application.routes.draw do
   end
 
   authenticate :user do
-    mount Qa::Engine => '/qa'
     mount Sidekiq::Web => '/sidekiq'
   end
 
