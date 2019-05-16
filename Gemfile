@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '5.1'
 # Use SCSS for stylesheets
-gem 'bootstrap-sass', '3.3.4.1'
-gem 'sass-rails', '< 5.0'
+gem 'bootstrap-sass'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -16,12 +16,11 @@ gem 'therubyracer',  platforms: :ruby
 gem 'tzinfo-data'
 
 gem 'mysql2', '~> 0.4.0'
-gem 'hydra', git: 'https://github.com/projecthydra/hydra.git', branch: 'pcdm'
-gem 'hydra-works'
-gem 'hydra-pcdm'
+gem 'blacklight'
+gem 'hydra-head', '~> 10.0'
+gem 'valkyrie'
+gem 'pg'
 
-gem 'qa'
-gem 'blacklight_range_limit'
 gem 'ezid-client'
 gem 'jhove-service'
 
@@ -46,7 +45,7 @@ gem 'bxslider-rails'
 
 gem 'bunny'
 gem 'sidekiq'
-gem 'active_job_status', '1.1.0'
+gem 'active_job_status'
 gem 'redis-rails'
 gem 'sinatra', :require => false
 
@@ -66,8 +65,6 @@ gem 'devise-guests', '~> 0.3'
 
 gem 'rb-readline'
 gem 'pry-rails', '~> 0.3.4'
-
-gem 'valkyrie'
 
 group :development, :test do
   gem 'jettywrapper'
